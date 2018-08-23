@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DoeCalor.Pages.HomePage">
+    <TabbedPage.Children>
+        <ContentPage Title="Cursos">
+            <ContentPage.Content>
+                <StackLayout>
+                    <Label Text="Tela de cursos"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+        <ContentPage Title="Mural de avisos">
+            <ContentPage.Content>
+                <StackLayout>
+                    <Label Text="Tela de cursos"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </TabbedPage.Children>
+</TabbedPage>

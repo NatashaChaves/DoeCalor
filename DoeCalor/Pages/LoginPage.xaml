@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DoeCalor.Pages.LoginPage"
+             Title="Login"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Image Source="logo.png" Margin="0,0,0,10" HorizontalOptions="CenterAndExpand" HeightRequest="100" WidthRequest="100" />
+            <Label Text="E-mail:" FontSize="Medium" TextColor="Blue"/>
+            <Entry x:Name="email" Text="{Binding Email}" Placeholder="Digite seu e-mail" FontSize="Medium" Keyboard="Email" />
+            <Label Text="Senha:" FontSize="Medium" TextColor="Blue"/>
+            <Entry Placeholder="Digite sua senha" Text="{Binding Password}" FontSize="Medium" IsPassword="True" />
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Entrar" Command="{Binding EntrarCommand}" BackgroundColor="Blue" TextColor="White" />
+                <Button Text="Registrar" Command="{Binding RegisterCommand}" BackgroundColor="Blue" TextColor="White" />
+            </StackLayout>
+            <Label Text="{Binding Error}" FontSize="Medium" TextColor="Red" HorizontalOptions="Center" HorizontalTextAlignment="Center" />
+            <Button Text="Login com Facebook" VerticalOptions="Center" BackgroundColor="Blue" TextColor="White" Command="{Binding LoginFacebookCommand}" />
+            <Button Text="Login com Google" VerticalOptions="Center" BackgroundColor="Red" TextColor="White" Command="{Binding LoginGoogleCommand}" />
+            <Label Text="{Binding Error}" HorizontalOptions="Center" TextColor="Red"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
